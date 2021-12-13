@@ -320,13 +320,13 @@
     -   [Parameters][316]
 -   [InMemory][317]
 -   [TransactionParams][318]
--   [Immutable][319]
-    -   [Parameters][320]
-    -   [init][321]
--   [ExpiryType][322]
-    -   [Properties][323]
--   [ContractCategory][324]
-    -   [Properties][325]
+-   [ExpiryType][319]
+    -   [Properties][320]
+-   [ContractCategory][321]
+    -   [Properties][322]
+-   [Immutable][323]
+    -   [Parameters][324]
+    -   [init][325]
 -   [Stream][326]
     -   [Parameters][327]
     -   [onUpdate][328]
@@ -3057,18 +3057,6 @@ An in memory storage which can be used for caching
 
 Type: [Object][331]
 
-## Immutable
-
-An abstract class for immutable objects
-
-### Parameters
-
--   `props` **[Object][331]** A list of properties to add for the immutable object (optional, default `{}`)
-
-### init
-
-Override to initialize an immutable object asynchronously
-
 ## ExpiryType
 
 Type: [Object][331]
@@ -3094,6 +3082,18 @@ Type: [Object][331]
 -   `forward_starting` **[Object][331]** 
     -   `forward_starting.1564531200` **[DateRange][377]** 
 -   `expiry_types` **[ExpiryType][378]** 
+
+## Immutable
+
+An abstract class for immutable objects
+
+### Parameters
+
+-   `props` **[Object][331]** A list of properties to add for the immutable object (optional, default `{}`)
+
+### init
+
+Override to initialize an immutable object asynchronously
 
 ## Stream
 
@@ -3762,19 +3762,19 @@ Returns **Observable**
 
 [318]: #transactionparams
 
-[319]: #immutable
+[319]: #expirytype
 
-[320]: #parameters-129
+[320]: #properties-2
 
-[321]: #init
+[321]: #contractcategory
 
-[322]: #expirytype
+[322]: #properties-3
 
-[323]: #properties-2
+[323]: #immutable
 
-[324]: #contractcategory
+[324]: #parameters-129
 
-[325]: #properties-3
+[325]: #init
 
 [326]: #stream
 
